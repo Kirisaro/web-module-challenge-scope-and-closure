@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+  counter 1 is being called inside its lexical scope while counter2 is being called outside its lexical scope.
   
   2. Which of the two uses a closure? How can you tell?
+  counter2 is using closure as count is being called outside of the functions lexical scope.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     Counter2 would be used best when you're trying to make the function able to be called globally but having to many things being called globally can cause issues so making everything be called in lexical scope is best practice.
 */
 
 // counter1 code
